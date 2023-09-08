@@ -31,7 +31,7 @@ FROM alpine:latest
 RUN apk --update --no-cache add curl
 LABEL org.opencontainers.image.title="Dendrite"
 LABEL org.opencontainers.image.description="Next-generation Matrix homeserver written in Go"
-LABEL org.opencontainers.image.source="https://github.com/controllability/dendrite.git"
+LABEL org.opencontainers.image.source="https://github.com/mdctleo/dendrite.git"
 LABEL org.opencontainers.image.licenses="Apache-2.0"
 LABEL org.opencontainers.image.documentation="https://matrix-org.github.io/dendrite/"
 LABEL org.opencontainers.image.vendor="The Matrix.org Foundation C.I.C."
