@@ -28,7 +28,7 @@ services:
       - 8008:8008
       - 8448:8448
     volumes:
-      - ./config/dendrite:/etc/dendrite
+      - ./config:/etc/dendrite
       # The following volumes use docker volumes, change this
       # if you prefer to have those files outside of docker.
       - dendrite_media:/var/dendrite/media
@@ -60,7 +60,7 @@ services:
       - "certbot"
 
     volumes:
-      - ./config/nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
 
 networks:
   internal:
